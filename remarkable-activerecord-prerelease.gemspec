@@ -2,15 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{remarkable-activerecord-prerelease}
-  s.version = "3.1.12"
+  s.version = "4.0.1.blazingcloud"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Carlos Brando", "Jos\303\251 Valim", "Diego Carrion"]
-  s.date = %q{2011-01-05}
+  s.date = %q{2012-05-23}
   s.description = %q{Remarkable ActiveRecord: collection of matchers and macros with I18n for ActiveRecord}
   s.email = ["eduardobrando@gmail.com", "jose.valim@gmail.com", "dc.rec1@gmail.com"]
   s.extra_rdoc_files = ["README", "LICENSE", "CHANGELOG"]
-  s.files = ["README", "LICENSE", "CHANGELOG", "lib/remarkable_activerecord", "lib/remarkable_activerecord/base.rb", "lib/remarkable_activerecord/describe.rb", "lib/remarkable_activerecord/human_names.rb", "lib/remarkable_activerecord/matchers", "lib/remarkable_activerecord/matchers/accept_nested_attributes_for_matcher.rb", "lib/remarkable_activerecord/matchers/allow_mass_assignment_of_matcher.rb", "lib/remarkable_activerecord/matchers/allow_values_for_matcher.rb", "lib/remarkable_activerecord/matchers/association_matcher.rb", "lib/remarkable_activerecord/matchers/have_column_matcher.rb", "lib/remarkable_activerecord/matchers/have_default_scope_matcher.rb", "lib/remarkable_activerecord/matchers/have_index_matcher.rb", "lib/remarkable_activerecord/matchers/have_readonly_attributes_matcher.rb", "lib/remarkable_activerecord/matchers/have_scope_matcher.rb", "lib/remarkable_activerecord/matchers/validate_acceptance_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_associated_matcher.rb", "lib/remarkable_activerecord/matchers/validate_confirmation_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_exclusion_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_inclusion_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_length_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_numericality_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_presence_of_matcher.rb", "lib/remarkable_activerecord/matchers/validate_uniqueness_of_matcher.rb", "lib/remarkable_activerecord.rb", "locale/en.yml"]
+  s.files = ["README", "LICENSE", "CHANGELOG"] + Dir['./lib/**/*.rb'] + Dir['./locale/**']
   s.homepage = %q{http://github.com/carlosbrando/remarkable}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{remarkable}
